@@ -1,0 +1,41 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'way_to_budy/nav_style.css' %}">
+<link rel="stylesheet" href="{% static 'way_to_budy/fonts/Gilroy/stylesheet.css' %}">
+<nav class="menu">
+    <img src="{% static 'way_to_budy/images/logo.svg' %}" class="menu__logo">
+    <a href="{% url 'store' %}">
+        <div class="item">
+            <img class="item__image" src="{% static 'way_to_budy/images/store.svg' %}">
+            <lable class="item__name">Магазин</lable>
+        </div>
+    </a>
+    <a href="{% url 'form' %}">
+        <div class="item">
+            <img class="item__image" src="{% static 'way_to_budy/images/form.svg' %}">
+            <lable class="item__name">Анкеты</lable>
+        </div>
+    </a>
+    <a href="{% url 'collection' %}">
+        <div class="item">
+            <img class="item__image" src="{% static 'way_to_budy/images/collection.svg' %}">
+            <lable class="item__name">Коллекция</lable>
+        </div>
+    </a>
+    <a href="{% url 'calls' %}">
+        <div class="item">
+            <img class="item__image" src="{% static 'way_to_budy/images/calls.svg' %}">
+            <lable class="item__name">Звонки</lable>
+        </div>
+    </a>
+    <a href="{% url 'profile' %}">
+        <div class="item">
+            <img class="item__image" src="{% static 'way_to_budy/images/profile.svg' %}">
+            <lable class="item__name">Профиль</lable>
+        </div>
+    </a>
+    <a href="{% url 'logout' %}" class="log_out">
+        <div class="item">
+            <img class="item__image" src="{% static 'way_to_budy/images/log_out.svg' %}">
+        </div>
+    </a>
+</nav>

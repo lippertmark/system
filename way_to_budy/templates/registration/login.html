@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+    <h2>Log in</h2>
+    <form class="login" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input class="enter_but" type="submit" value="Log in"/>
+            <h3 class="dot">•</h3>
+            <a href="{% url 'signup' %}" class="new_account">Create account</a>
+    </form>
+    <script>
+        document.getElementById('id_password').placeholder = 'Password';
+    </script>
+{% endblock %}

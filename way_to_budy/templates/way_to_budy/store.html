@@ -1,0 +1,27 @@
+{% extends 'way_to_budy/base.html' %}
+
+
+{% block head %}
+<title>Магазин</title>
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+    {% include 'includes/nav.html' %}
+    <div class="store__content">
+        <h1>Магазин</h1>
+        <div class="store__goods">
+            {% for good in goods %}
+                <div class="store__item">
+                    <img class='store__item__image' src="{% static good.image.url %}">
+                    <h2 class="store__item__name">{{ good.name }}</h2>
+                    <h3 class="store__item__info">{{ good.info }}</h3>
+                    <button class="store__item__button">
+                            <div class="store__item__buy">Купить</div>
+                            <div class="store__item__cost">{{ good.cost }}р</div>
+                    </button>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

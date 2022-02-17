@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+        
+{% endblock %}
+
+{% block content %}
+    <h2>Sign up</h2>
+    <form class="signup" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input class="enter_but" type="submit" value="Sign up"/>
+    </form>
+    <script>
+        document.getElementById('id_first_name').placeholder = 'First name';
+        document.getElementById('id_email').placeholder = 'Email';
+        document.getElementById('id_password').placeholder = 'Password';
+        document.getElementById('id_password2').placeholder = 'Password again';
+    </script>
+{% endblock %}

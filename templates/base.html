@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="{% static 'registration/style.css' %}">
+    <link rel="stylesheet" href="{% static 'way_to_budy/fonts/Gilroy/stylesheet.css' %}">
+    {% block head %}
+
+    {% endblock %}
+</head>
+<body>
+    <div class="block">
+        <div class="left">
+
+            <img src="{% static 'way_to_budy/images/logo.svg' %}">
+            <h3 class="left__slogan">WAY TO BODY</h3>
+        </div>
+        <div class="right">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('id_username').placeholder = 'Username';
+    </script>
+</body>
+</html>

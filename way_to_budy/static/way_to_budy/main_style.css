@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* сброс стилей */
+
+
+.store__content{
+    margin: 0 0 0 100px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+body{
+    background-color: #FBF6FF;
+}
+h1{
+    font-family: Gilroy;
+    font-weight: bold;
+    font-size: 40px;
+    color: #C4C4C4;
+}
+h2{
+    font-family: Gilroy;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FBF6FF;
+}
+h3{
+    font-family: Gilroy;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FBF6FF;
+}
+
+.store__goods{
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0 0 0;
+    gap: 50px;
+    flex-flow: row wrap;
+}
+.store__item{
+    width: 250px;
+    background: #5A13A7;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FBF6FF;
+    padding: 30px;
+}
+.store__item__image{
+    width: 150px;
+}
+.store__item__name{
+    margin: 20px 0 0 0;
+}
+.store__item__info{
+    margin: 15px 0 20px 0;
+}
+.store__item__button{
+    width: 190px;
+    height: 40px;
+    background: #FBF6FF;
+    box-shadow: 0px 4px 100px 20px rgba(244, 72, 121, 0.2);
+    border-radius: 50px;
+    margin-top: auto;
+    font-family: Gilroy;
+    font-weight: normal;
+    font-size: 20px;
+    position: relative;
+}
+
+.store__item__buy{
+    position: relative;
+    align-self: center;
+    left: -30px;
+}
+.store__item__cost{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    width: auto;
+    background-color: #F44879;
+    padding: 3px 10px;
+    border-radius: 50px;
+    color: #FBF6FF;
+}
